@@ -13,23 +13,37 @@
             margin: 0 auto; 
             padding: 2rem; 
             color: #333; 
-            background-color: #f9f9f9; /* پس‌زمینه خیلی ملایم */
+            background-color: #f4f7f6; /* پس‌زمینه خاکستری مایل به سبز ملایم */
         }
 
-        /* استایل هدر (بالای صفحه) */
+        /* استایل هدر (کادر اول) - سبز زمردی */
         .header {
             text-align: center;
-            background-color: #ffffff;
-            padding: 2rem;
+            background-color: #009B77; /* رنگ سبز زمردی */
+            padding: 2.5rem;
             border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            box-shadow: 0 6px 12px rgba(0, 155, 119, 0.2); /* سایه هم‌رنگ سبز */
             margin-bottom: 2rem;
-            border-top: 5px solid #2c3e50; /* خط رنگی بالای هدر */
+            color: #ffffff; /* متن‌ها سفید شوند */
         }
-        .header h1 { margin-top: 0; color: #2c3e50; }
-        .header p { margin: 0.3rem 0; color: #555; }
-        .header a { color: #0366d6; text-decoration: none; font-weight: bold; }
-        .header a:hover { text-decoration: underline; }
+        .header h1 { 
+            margin-top: 0; 
+            color: #ffffff; 
+            font-size: 2.2rem;
+        }
+        .header p { 
+            margin: 0.5rem 0; 
+            color: #e8f8f5; /* سفید مایل به سبز برای خوانایی بهتر */
+            font-size: 1.05rem;
+        }
+        .header a { 
+            color: #ffffff; 
+            text-decoration: underline; 
+            font-weight: bold; 
+        }
+        .header a:hover { 
+            color: #c9f3e8; 
+        }
 
         /* استایل باکس‌های اصلی (کارت‌ها) */
         .card {
@@ -38,7 +52,7 @@
             border-radius: 10px;
             box-shadow: 0 4px 6px rgba(0,0,0,0.05);
             margin-bottom: 2rem;
-            border-left: 5px solid #0366d6; /* خط رنگی سمت چپ هر باکس */
+            border-left: 5px solid #009B77; /* خط رنگی سمت چپ هر باکس هم سبز زمردی شد */
         }
         .card h2 { 
             color: #2c3e50; 
@@ -55,13 +69,13 @@
         .tag-container { margin-top: 0.5rem; }
         .tag { 
             display: inline-block;
-            background: #e1ecf4; 
-            color: #0366d6; 
+            background: #e8f8f5; /* پس‌زمینه تگ‌ها هم مایل به سبز */
+            color: #009B77; /* متن تگ‌ها سبز زمردی */
             padding: 4px 10px; 
             border-radius: 15px; 
             font-size: 0.9em; 
             margin: 4px 4px 4px 0; 
-            font-weight: 500;
+            font-weight: 600;
         }
         
         /* استایل پروژه‌ها */
@@ -72,23 +86,23 @@
 </head>
 <body>
 
-    <!-- هدر صفحه -->
+    <!-- هدر صفحه (کادر اول با رنگ سبز زمردی) -->
     <div class="header">
         <h1>Zahra Saeidi</h1>
         <p><strong>MSc Student in Data Science</strong></p>
-        <p>📍 Mashhad, Iran | ✉️ <a href="mailto:zsaeidi2018@gmail.com">zsaeidi2018@gmail.com</a> | 🔗 <a href="https://github.com/zsaeidi-data" target="_blank">https://github.com/zsaeidi-data</a></p>
+        <p>📍 Mashhad, Iran | ✉️ <a href="mailto:z.saeidi.data@gmail.com">z.saeidi.data@gmail.com</a> | 🔗 <a href="https://github.com/zsaeidi-data" target="_blank">GitHub Profile</a></p>
     </div>
 
     <!-- بخش علایق علمی -->
     <div class="card">
         <h2>Research Interests</h2>
-        <p>My primary research interests lie in <strong> Machine Learning , Optimization and Operation Research </strong>. I am particularly interested in applying mathematical and computational approaches to solve complex, real-world data-driven problems, with a focus on developing efficient algorithms and models.</p>
+        <p>My primary research interests lie in <strong>Optimization, Operations Research, and Machine Learning</strong>. I am particularly interested in applying mathematical and computational approaches to solve complex, real-world data-driven problems, with a focus on developing efficient algorithms and models.</p>
     </div>
 
     <!-- بخش درباره من -->
     <div class="card">
         <h2>About Me</h2>
-        <p>I have a strong academic background in Applied Mathematics and Computer Science. Currently, I am pursuing my Master's in Data Science, focusing on building a solid foundation in mathematical modeling and computational data analysis. I have over <strong>[X] years</strong> of experience teaching Mathematics and Physics, which has strengthened my ability to communicate complex scientific concepts effectively. My long-term academic goal is to contribute to high-impact research in the intersection of mathematics and data science.</p>
+        <p>I have a strong academic background in Applied Mathematics and Computer Science. Currently, I am pursuing my Master's in Data Science, focusing on building a solid foundation in mathematical modeling and computational data analysis. I have over <strong>20 years</strong> of experience teaching Mathematics and Physics, which has strengthened my ability to communicate complex scientific concepts effectively. My long-term academic goal is to contribute to high-impact research in the intersection of mathematics and data science.</p>
     </div>
 
     <!-- بخش تحصیلات -->
@@ -140,7 +154,7 @@
     <div class="card">
         <h2>Teaching Experience</h2>
         <ul>
-            <li><strong>Mathematics and Physics Tutor</strong> (Over [X] years) <br> 
+            <li><strong>Mathematics and Physics Tutor</strong> (Over 20 years) <br> 
             <em>Provided private tutoring and voluntary teaching for underprivileged children, helping them build foundational skills in STEM subjects. This experience honed my ability to break down complex concepts for diverse audiences.</em></li>
         </ul>
     </div>
