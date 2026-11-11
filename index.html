@@ -5,62 +5,145 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Z. Saeidi - Data Science & Optimization</title>
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; line-height: 1.6; max-width: 800px; margin: 0 auto; padding: 2rem; color: #333; }
-        h1 { border-bottom: 2px solid #333; padding-bottom: 0.5rem; margin-bottom: 0.2rem; }
-        h2 { border-bottom: 1px solid #ccc; padding-bottom: 0.3rem; margin-top: 2rem; color: #2c3e50; }
+        /* تنظیمات کلی صفحه */
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; 
+            line-height: 1.6; 
+            max-width: 850px; 
+            margin: 0 auto; 
+            padding: 2rem; 
+            color: #333; 
+            background-color: #f9f9f9; /* پس‌زمینه خیلی ملایم */
+        }
+
+        /* استایل هدر (بالای صفحه) */
+        .header {
+            text-align: center;
+            background-color: #ffffff;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            margin-bottom: 2rem;
+            border-top: 5px solid #2c3e50; /* خط رنگی بالای هدر */
+        }
+        .header h1 { margin-top: 0; color: #2c3e50; }
+        .header p { margin: 0.3rem 0; color: #555; }
+        .header a { color: #0366d6; text-decoration: none; font-weight: bold; }
+        .header a:hover { text-decoration: underline; }
+
+        /* استایل باکس‌های اصلی (کارت‌ها) */
+        .card {
+            background-color: #ffffff;
+            padding: 1.5rem 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            margin-bottom: 2rem;
+            border-left: 5px solid #0366d6; /* خط رنگی سمت چپ هر باکس */
+        }
+        .card h2 { 
+            color: #2c3e50; 
+            margin-top: 0; 
+            border-bottom: 2px solid #eee; 
+            padding-bottom: 0.5rem; 
+        }
+
+        /* استایل لیست‌ها */
         ul { padding-left: 1.5rem; }
-        a { color: #0366d6; text-decoration: none; }
-        a:hover { text-decoration: underline; }
-        .contact-info { font-size: 0.95em; color: #555; margin-bottom: 2rem; }
-        .project-item { margin-bottom: 1.5rem; }
-        .project-title { font-size: 1.1em; font-weight: bold; margin-bottom: 0.3rem; }
+        li { margin-bottom: 0.5rem; }
+
+        /* استایل تگ‌های مهارت */
+        .tag-container { margin-top: 0.5rem; }
+        .tag { 
+            display: inline-block;
+            background: #e1ecf4; 
+            color: #0366d6; 
+            padding: 4px 10px; 
+            border-radius: 15px; 
+            font-size: 0.9em; 
+            margin: 4px 4px 4px 0; 
+            font-weight: 500;
+        }
+        
+        /* استایل پروژه‌ها */
+        .project-item { margin-bottom: 1.5rem; border-bottom: 1px dashed #eee; padding-bottom: 1rem; }
+        .project-item:last-child { border-bottom: none; padding-bottom: 0; }
+        .project-title { font-size: 1.15em; font-weight: bold; color: #2c3e50; margin-bottom: 0.3rem; }
     </style>
 </head>
 <body>
 
-    <h1>Zahra Saeidi</h1>
-    <p><strong>MSc Student in Data Science</strong></p>
-    <p class="contact-info">📍 Mashhad, Iran | ✉️ <a href="mailto:zsaeidi2018@gmail.com">your-email@example.com</a> | 🔗 <a href="https://github.com/zsaeidi-data" target="_blank">GitHub Profile</a></p>
-
-    <h2>Research Interests</h2>
-    <p>My primary research interests lie in <strong>Machine Learning , Optimization and Operations Research </strong>. I am particularly interested in applying mathematical and computational approaches to solve complex, real-world data-driven problems, with a focus on developing efficient algorithms and models.</p>
-
-    <h2>About Me</h2>
-    <p>I have a strong academic background in Applied Mathematics and Computer Science. Currently, I am pursuing my Master's in Data Science, focusing on building a solid foundation in mathematical modeling and computational data analysis. I have over <strong>[X] years</strong> of experience teaching Mathematics and Physics, which has strengthened my ability to communicate complex scientific concepts effectively. My long-term academic goal is to contribute to high-impact research in the intersection of mathematics and data science.</p>
-
-    <h2>Education</h2>
-    <ul>
-        <li><strong>MSc in Data Science</strong> – Ferdowsi University of Mashhad (2024 – Present)</li>
-        <li><strong>BSc in Applied Mathematics & Computer Science</strong> – Amirkabir University of Technology (Tehran Polytechnic)</li>
-    </ul>
-
-    <h2>Technical Skills</h2>
-    <ul>
-        <li><strong>Programming:</strong> Python (NumPy, Pandas, Scikit-learn, Matplotlib), SQL, (Add other languages if applicable like R)</li>
-        <li><strong>Tools:</strong> Jupyter Notebook, Git/GitHub, LaTeX</li>
-        <li><strong>Mathematical & Statistical:</strong> Linear Algebra, Optimization, Probability, Statistical Analysis</li>
-    </ul>
-
-    <h2>Selected Projects</h2>
-    <div class="project-item">
-        <div class="project-title">1. Digit Classification using K-Nearest Neighbors (KNN)</div>
-        <p><strong>Description:</strong> Implemented the KNN algorithm on the Scikit-Learn Digits dataset to classify handwritten digits. Tuned the hyperparameter 'k' to optimize the model and achieved a high accuracy rate.</p>
-        <p><strong>Tools Used:</strong> Python, Scikit-learn, Matplotlib, Jupyter Notebook</p>
-        <p><a href="#" target="_blank">[Link to GitHub Repository]</a></p>
-    </div>
-    
-    <div class="project-item">
-        <div class="project-title">2. [Your Next Project Title]</div>
-        <p><strong>Description:</strong> [Briefly describe the problem and the method you used to solve it. E.g., "Developed a clustering model to segment customer data using K-Means algorithm..."]</p>
-        <p><strong>Tools Used:</strong> [e.g., Python, Pandas, Scikit-learn]</p>
-        <p><a href="#" target="_blank">[Link to GitHub Repository]</a></p>
+    <!-- هدر صفحه -->
+    <div class="header">
+        <h1>Zahra Saeidi</h1>
+        <p><strong>MSc Student in Data Science</strong></p>
+        <p>📍 Mashhad, Iran | ✉️ <a href="mailto:your-email@example.com">your-email@example.com</a> | 🔗 <a href="https://github.com/zsaeidi-data" target="_blank">GitHub</a></p>
     </div>
 
-    <h2>Teaching Experience</h2>
-    <ul>
-        <li><strong>Mathematics and Physics Tutor</strong> (Over [15] years) <br> 
-        <em>Provided private tutoring and voluntary teaching for underprivileged children, helping them build foundational skills in STEM subjects. This experience honed my ability to break down complex concepts for diverse audiences.</em></li>
-    </ul>
+    <!-- بخش علایق علمی -->
+    <div class="card">
+        <h2>Research Interests</h2>
+        <p>My primary research interests lie in <strong>Optimization, Operations Research, and Machine Learning</strong>. I am particularly interested in applying mathematical and computational approaches to solve complex, real-world data-driven problems, with a focus on developing efficient algorithms and models.</p>
+    </div>
+
+    <!-- بخش درباره من -->
+    <div class="card">
+        <h2>About Me</h2>
+        <p>I have a strong academic background in Applied Mathematics and Computer Science. Currently, I am pursuing my Master's in Data Science, focusing on building a solid foundation in mathematical modeling and computational data analysis. I have over <strong>[X] years</strong> of experience teaching Mathematics and Physics, which has strengthened my ability to communicate complex scientific concepts effectively. My long-term academic goal is to contribute to high-impact research in the intersection of mathematics and data science.</p>
+    </div>
+
+    <!-- بخش تحصیلات -->
+    <div class="card">
+        <h2>Education</h2>
+        <ul>
+            <li><strong>MSc in Data Science</strong> – Ferdowsi University of Mashhad (2024 – Present)</li>
+            <li><strong>BSc in Applied Mathematics & Computer Science</strong> – Amirkabir University of Technology (Tehran Polytechnic)</li>
+        </ul>
+    </div>
+
+    <!-- بخش مهارت‌ها -->
+    <div class="card">
+        <h2>Technical Skills</h2>
+        <p><strong>Programming & Tools:</strong></p>
+        <div class="tag-container">
+            <span class="tag">Python</span>
+            <span class="tag">NumPy</span>
+            <span class="tag">Pandas</span>
+            <span class="tag">Scikit-learn</span>
+            <span class="tag">SQL</span>
+            <span class="tag">Git / GitHub</span>
+            <span class="tag">Jupyter</span>
+            <span class="tag">LaTeX</span>
+        </div>
+        <p style="margin-top: 1rem;"><strong>Mathematical & Statistical:</strong> Linear Algebra, Optimization, Probability, Statistical Analysis.</p>
+    </div>
+
+    <!-- بخش پروژه‌ها -->
+    <div class="card">
+        <h2>Selected Projects</h2>
+        
+        <div class="project-item">
+            <div class="project-title">1. Digit Classification using K-Nearest Neighbors (KNN)</div>
+            <p><strong>Description:</strong> Implemented the KNN algorithm on the Scikit-Learn Digits dataset to classify handwritten digits. Tuned the hyperparameter 'k' to optimize the model and achieved a high accuracy rate.</p>
+            <p><strong>Tools Used:</strong> Python, Scikit-learn, Matplotlib, Jupyter Notebook</p>
+            <p><a href="#" target="_blank">[Link to GitHub Code]</a></p>
+        </div>
+        
+        <div class="project-item">
+            <div class="project-title">2. [Your Next Project Title]</div>
+            <p><strong>Description:</strong> [Briefly describe the problem and the method you used to solve it. E.g., "Developed a clustering model to segment customer data using the K-Means algorithm..."]</p>
+            <p><strong>Tools Used:</strong> [e.g., Python, Pandas, Scikit-learn]</p>
+            <p><a href="#" target="_blank">[Link to GitHub Code]</a></p>
+        </div>
+    </div>
+
+    <!-- بخش سابقه تدریس -->
+    <div class="card">
+        <h2>Teaching Experience</h2>
+        <ul>
+            <li><strong>Mathematics and Physics Tutor</strong> (Over [X] years) <br> 
+            <em>Provided private tutoring and voluntary teaching for underprivileged children, helping them build foundational skills in STEM subjects. This experience honed my ability to break down complex concepts for diverse audiences.</em></li>
+        </ul>
+    </div>
 
 </body>
 </html>
